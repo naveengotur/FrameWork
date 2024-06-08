@@ -18,7 +18,7 @@ public class ExtentManager {
     
     public static ExtentReports createInstance() 
     {
-        ExtentSparkReporter htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir")+"/Reports/AutomationReports"+System.currentTimeMillis()+".html");
+        ExtentSparkReporter htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir")+"/Reports/AutomationReports"+Helper.getCurrentDateTime()+".html");
         htmlReporter.config().setTheme(Theme.DARK);
         htmlReporter.config().setDocumentTitle("Sprint Report");
         htmlReporter.config().setEncoding("utf-8");

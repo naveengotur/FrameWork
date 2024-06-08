@@ -22,6 +22,8 @@
 			<artifactId>poi</artifactId>
 			<version>5.1.0</version>
 		</dependency>
+		
+		
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
@@ -48,4 +50,23 @@
 			<version>1.0.2</version>
 		</dependency>
 	</dependencies>
+	<build>
+		
+		<plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.2.5</version>
+        <configuration>
+          <suiteXmlFiles>
+			
+            <suiteXmlFile>${XMLFiles}</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+  
+</plugins>
+	</build>
+	
+	
 </project>

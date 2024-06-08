@@ -1,7 +1,10 @@
  package com.learnautomation.utility;
 
 import java.io.File;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -52,5 +55,13 @@ public class Helper {
 		
 	}
 	
-	
+	public static String getCurrentDateTime()
+	{
+		
+		SimpleDateFormat dateformat = new SimpleDateFormat("dd_mm_yyyy_HH:mm:ss");
+		
+		return dateformat.format(d);
+ 		
+		
+	}
 }

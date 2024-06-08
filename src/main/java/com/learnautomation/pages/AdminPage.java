@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.github.javafaker.Faker;
 import com.learnautomation.utility.Helper;
 
 public class AdminPage {
@@ -51,9 +52,11 @@ public class AdminPage {
 		
 		driver.findElement(empName).sendKeys(eName);
 		
-		driver.findElement(userName).sendKeys(uName);
+		driver.findElement(userName).sendKeys(uName+System.currentTimeMillis());
 		
 		driver.findElement(userStatus).sendKeys(uStatus);
+		
+	//	driver.findElement(userName).sendKeys(uName+ new Faker().number().randomDigit());
 		
 		driver.findElement(password).sendKeys(pass);
 		

@@ -50,7 +50,7 @@ public class UserCreateTest extends BaseClass {
 		
 		admin.createUser(role, empName, userName, userStatus, pass);
 	
-		boolean status = admin.isSuccessMsgDisplayed();
+		boolean status = admin.isSuccessMsgDisplayed(); 
 
 		Assert.assertTrue(driver.getCurrentUrl().contains("dashboard"), "User Didn't match");
 	}
