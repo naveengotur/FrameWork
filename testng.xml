@@ -8,11 +8,12 @@
 		</listener>
 	</listeners>
 	
-  <test thread-count="3" name="Test" parallel="classes">
+  <test thread-count="5" name="Test" parallel="classes">
     <classes>
       <class name="com.learnautomation.testcases.LoginTestWithoutPOM"/>
       <class name="com.learnautomation.testcases.LoginTestWithPOMWithFactory"/>
       <class name="com.learnautomation.testcases.LoginTestWithPOM"/>
+      <class name="com.learnautomation.testcases.UserCreateTest"/>
       <class name="com.learnautomation.testcases.UserCreateTest"/>
       <class name="com.learnautomation.base.BaseClass"/>
     </classes>
